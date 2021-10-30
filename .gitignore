@@ -1,3 +1,5 @@
 /pom.xml
 /target/
 /.idea/
+/src/main/java/by/acdemy/.classpath
+/src/main/java/by/acdemy/.project
