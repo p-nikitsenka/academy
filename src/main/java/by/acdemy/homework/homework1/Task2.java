@@ -30,18 +30,26 @@ public class Task2 {
                 break;
             case "float":
                 System.out.println("Введите значение переменной типа float");
-                if (console.hasNextFloat()) {
-                    System.out.println("Вы ввели данные неверного типа. Введите данные типа float");
+              if (console.hasNextFloat()) {
+                  float var3 = console.nextFloat();
+                  double result3 = var3 * var3;
+                  System.out.println(var3 + " в квадрате равно " + result3);
                 } else {
-                    float var3 = console.nextFloat();
-                    double result3 = var3 * var3;
-                    System.out.println(var3 + " в квадрате равно " + result3);
+                  System.out.println("Вы ввели данные неверного типа. Введите данные типа float");
                 }
                 break;
             case "String":
                 System.out.println("Введите значение переменной типа String");
                     String var4 = console.nextLine();
                     System.out.println("Hello " + var4);
+                break;
+            case "char":
+                System.out.println("Введите значение переменной: ");
+                String var5 = console.nextLine();
+                System.out.println("Код символа " + var5.charAt(0) + " соответствует коду " + (int)(var5.charAt(0)));
+                break;
+            default:
+                System.out.println("Unsupported type");
                 break;
 
         }
